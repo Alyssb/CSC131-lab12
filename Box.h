@@ -9,7 +9,9 @@ class Box {
 public:
     double getVol() const;
     Box(double l = 1, double w = 1, double h = 1);
-
+    bool operator<(const Box & rhs) const;
+    bool operator>(const Box & rhs) const;
+    bool operator==(const Box & rhs) const;
 private:
     double length;
     double width;
