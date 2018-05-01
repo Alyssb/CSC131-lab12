@@ -26,3 +26,13 @@ bool Box::operator==(const Box& rhs) const
 {
     return getVol() == rhs.getVol();
 }
+
+Box Box::operator+(const Box& rhs) const
+{
+    double length{rhs.length + this->length};
+    double width{rhs.width + this->width};
+    double height{rhs.height + this->height};
+    Box box{length, width, height};
+
+    return box;
+}

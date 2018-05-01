@@ -13,5 +13,8 @@ int main()
     Box box3{};
     std::cout << "box1 = box2?? " << (box1 == box3 ? "Yes" : "No") << std::endl;
 
+    Box box4 = box1+box2;
+    std::cout << "box4.getVol() = " << box4.getVol() << std::endl;
+
     return 0;
 }
