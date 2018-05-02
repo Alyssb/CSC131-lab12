@@ -1,8 +1,10 @@
 #include <iostream>
 #include "Box.h"
+#include "Point.h"
 
 int main()
 {
+    /**
     std::cout << "Hello, World!" << std::endl;
     Box box1{};
     std::cout << "box1.getVol() = " << box1.getVol() << std::endl;
@@ -15,6 +17,13 @@ int main()
 
     Box box4 = box1+box2;
     std::cout << "box4.getVol() = " << box4.getVol() << std::endl;
+
+     */
+    Point x{};
+    Point y{10, -4};
+    Point z = x+y;
+
+    std::cout << "Point z = " << z << std::endl;
 
     return 0;
 }
